@@ -33,8 +33,6 @@ const App: React.FC<{ delay: number }> = ({ delay }) => {
     dispatch(init())
   }, [])
 
-  console.log(`?isLoaded`, isLoaded)
-
   if (!isLoaded) {
       return <h1>Идет загрузка данных...</h1>
   }
